@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/custum.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Demo-Only</title>
+   </head>
+   <body>
+      <!-- <div class="login-form">
+         <div class="container">
+            <div class="main">
+               <div class="row">
+                  <div class="login">
+                     <h1>Login-form</h1>
+                     <div class="col-md-8 col-xs-12 col-md-offset-2">
+                        <div class="col-md-6 col-xs-12">
+                           <div class="first">
+                              <label class="col-md-6 col-xs-12 labelbox">First-Name:</label>
+                              <div class="'col-md-6 col-xs-12">
+                                 <input type="" placeholder="first name" class="first-name" name="">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                           <div class="Last">
+                              <label class="col-md-6 col-xs-12 labelbox">Last-Name:</label>
+                              <div class="'col-md-6 col-xs-12">
+                                 <input type="" placeholder="Last name" class="Last-name" name="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+               	<div class="col-md-8 col-xs-12 col-md-offset-2 textaligncenter">
+               <button class="BtnSave">Save</button>
+                <button class="BtnReset">Reset</button>
+               	</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="imag">
+      	<a href="C:\Users\TranstekPC29\Desktop\Demo\images/TMlogo.PNG" download></a>
+      	<img src="C:\Users\TranstekPC29\Desktop\Demo\images/TMlogo.PNG" >
+      </div>
+      <!-- <button id="downlod" download="">downlod</button> -->
+      <!-- <a href="https://www.w3schools.com/images/myw3schoolsimage.jpg" download>
+  <img src="https://www.w3schools.com/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+</a> -->
+<!-- <a href="https://demo-burkesbusbooking.tmpanel.co.uk/Resources/BurkesBus/Header/BB-Logo-768x151.png" download="https://demo-burkesbusbooking.tmpanel.co.uk/Resources/BurkesBus/Header/BB-Logo-768x151.png"> download file 
+</a>  -->
+
+<a id="DownloadCV" download><button id="BtnCV" class="CV mt-3"><i class="fa fa-download mr-3"></i>Download CV</button></a>
+
+<script>
+
+          $(document).ready(function() {
+          $('.BtnReset').on('click', function() {
+              $('.first-name').val('');
+                 $('.Last-name').val('');
+            });
+            $('.BtnSave').on('click', function() {
+
+             alert("Hello! Save deta");
+            });
+        });
+</script>
+
+
+<script>
+	$('#BtnCV').click(function(){
+//     $.blockUI({
+//         // message: `<h1><img src="static/images/loading-spinner-grey.gif" /> Please Wait...</h1>`,
+//         message: `<h1><img src="images/download.gif" class="img-fluid" /></h1>`,            
+//    });       
+//    setTimeout($.unblockUI, 9000);
+   $('#DownloadCV').attr("href", "images/Uvesh_Resume.pdf");
+});
+</script>
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </body>
+</html>
